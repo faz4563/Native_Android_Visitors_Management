@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginScreenActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/myToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary">
+
+
+            <TextView
+                android:id="@+id/myToolbar_title_Login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/visitor_s_book"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="38sp"
+                android:letterSpacing="0.1"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.Toolbar>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:src="@drawable/activation"
+            android:contentDescription="@string/visitor_s_book" />
+
+        <TextView
+            android:id="@+id/titleText_Login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontWeight = "900"
+            android:letterSpacing="0"
+            android:text="@string/app_registration"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="38sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/subtitle_Login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontWeight = "900"
+            android:letterSpacing="0"
+            android:text="@string/enter_your_registered_phone_number"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/textfield_border"
+            android:hint="@string/enter_your_registered_phone_number"
+            android:paddingStart="20dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/submit"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
